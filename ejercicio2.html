@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body style="background-color: azure;" ></body>
+    <center>
+    <title>Mostrador de Número Par o Impar</title>
+    <script>
+        function verificarParidad() {
+            const numero = parseInt(document.getElementById("numero").value);
+            if (isNaN(numero)) {
+                alert("Por favor, ingresa un número válido.");
+            } else {
+                if (numero % 2 === 0) {
+                    alert("El número es par");
+                } else {
+                    alert("El número es impar");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Determina si un número es par o impar</h2>
+    <label for="numero">Ingresa un número:</label>
+    <input type="text" id="numero">
+    <button onclick="verificarParidad()">Verificar</button>
+</center>
+</body>
+</html>
